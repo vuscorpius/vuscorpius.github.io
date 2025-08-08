@@ -1,51 +1,140 @@
-<div align="center">
-<img src="https://github.com/MohammadSahragard/Responsive-Profile-Page/blob/main/Thumbnile.png?raw=true" align="center" style="width: 100%" alt="responsive profile page" />
-</div>  
-  
-# Responsive Profile Page  
-<br/>
-Well, this is the first project that I recorded for YouTube and shared the source code on GitHub.
-This is a simple profile page. And I designed the user interface (UI) myself, Ok, not good 😂🤦🏻 Sorry, but it was my first design.
-I like your comments ❤️🙏.
+# Backend Developer Portfolio Template
 
+[Demo](https://www.devportfoliotemplates.com/portfolio-templates/backend-developer)
 
-<br/>
+## Getting Started
 
-### For Support Me, See:
-  1. [YouTube](https://t.co/aMYyLNZsdZ)
-  2. [Instagram]()
-  3. [Linkedin](https://www.linkedin.com/posts/mohammadsahragard_responsive-profile-page-with-html-and-css-activity-6972551215297482752-n_Iw?utm_source=share&utm_medium=member_android)
-  4. [Twitter](https://twitter.com/MammadSahragard/status/1566787380379586560?t=WtmjmvziGmi44HpU6YXCZQ&s=19)
-  5. [Dev](https://dev.to/mohammadsahragard/responsive-profile-page-561i)
+You have two options to get started with this template:
 
-<br/>  
+### Option 1: Using Git Sparse Checkout
 
-### Technologies Used  
-<div align="left">  
-<a href="https://www.w3schools.com/css/" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/css3-original-wordmark.svg" alt="CSS3" height="50" /></a>  
-<a href="https://en.wikipedia.org/wiki/HTML5" target="_blank"><img style="margin: 10px" src="https://profilinator.rishav.dev/skills-assets/html5-original-wordmark.svg" alt="HTML5" height="50" /></a>  
-</div>  
+If you want to clone only this specific template:
 
-<br/>
+```bash
+git clone --no-checkout https://github.com/devportfoliotemplates/devportfoliotemplates.git
+cd devportfoliotemplates
+git sparse-checkout init --cone
+git sparse-checkout set backend-developer-portfolio-template
+git checkout
+```
 
-## For More Tutorials:
-###### (I mean follow and sub me. Because I don't have a video yet, this was my first video 😂.)
-<a href="https://twitter.com/MammadSahragard" target="_blank">
-<img src=https://img.shields.io/badge/twitter-%2300acee.svg?&style=for-the-badge&logo=twitter&logoColor=white alt=twitter style="margin-bottom: 5px;" />
-</a>
-<a href="https://dev.to/MohammadSahragard" target="_blank">
-<img src=https://img.shields.io/badge/dev.to-%2308090A.svg?&style=for-the-badge&logo=dev.to&logoColor=white alt=devto style="margin-bottom: 5px;" />
-</a>
-<a href="https://linkedin.com/in/MohammadSahragard" target="_blank">
-<img src=https://img.shields.io/badge/linkedin-%231E77B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white alt=linkedin style="margin-bottom: 5px;" />
-</a>
-<a href="https://instagram.com/Mammad.Sahragard" target="_blank">
-<img src=https://img.shields.io/badge/instagram-%23000000.svg?&style=for-the-badge&logo=instagram&logoColor=white alt=instagram style="margin-bottom: 5px;" />
-</a>
-<a href="https://github.com/MohammadSahragard" target="_blank">
-<img src=https://img.shields.io/badge/github-%2324292e.svg?&style=for-the-badge&logo=github&logoColor=white alt=github style="margin-bottom: 5px;" />
-</a>
-<a href="https://www.youtube.com/user/https://www.youtube.com/channel/UCmlrWX41qiXEv6QNMzivxIw" target="_blank">
-<img src=https://img.shields.io/badge/youtube-%23EE4831.svg?&style=for-the-badge&logo=youtube&logoColor=white alt=youtube style="margin-bottom: 5px;" />
-</a>  
-</div>  
+### Option 2: Direct Download
+
+You can download this template as a ZIP file:
+
+1. Visit [download-directory.github.io](https://download-directory.github.io/)
+2. Paste the URL of this portfolio folder: `https://github.com/devportfoliotemplates/devportfoliotemplates/tree/main/backend-developer-portfolio-template`
+3. Download and extract the ZIP file
+
+### Running the Template
+
+Once you have the template:
+
+1. Install dependencies:
+
+```bash
+npm install
+# or
+yarn install
+# or
+pnpm install
+```
+
+2. Run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
+
+3. Open [http://localhost:3000](http://localhost:3000) in your browser to see the portfolio.
+
+## Customization
+
+### Personal Information
+
+1. Update metadata in `app/layout.tsx`:
+
+   - Site title
+   - Description
+   - Open Graph metadata
+   - Favicon
+
+2. Modify content in `app/page.tsx`:
+
+   - Hero section
+   - About section
+   - Projects
+   - Contact information
+
+3. Replace assets:
+   - Replace images in the `public` directory
+   - Update social media icons
+   - Modify logo if needed
+
+### Styling
+
+1. Colors and Theme:
+
+   - Customize colors in `tailwind.config.js`
+   - Modify theme variables in `app/globals.css`
+
+2. Typography:
+
+   - Update font families in `tailwind.config.js`
+   - Modify text sizes and weights
+
+3. Layout:
+   - Adjust spacing and padding in component files
+   - Modify responsive breakpoints in `tailwind.config.js`
+
+## Troubleshooting
+
+### Common Issues
+
+1. **Build Errors**
+
+   - Ensure all dependencies are installed
+   - Clear `.next` folder and node_modules
+   - Run `npm install` again
+
+2. **Styling Issues**
+
+   - Run `npm run build` to ensure TailwindCSS classes are generated
+   - Check for conflicting styles in `globals.css`
+
+3. **Image Loading**
+   - Verify images are in the correct format (PNG, JPG, WebP)
+   - Check image paths are correct
+   - Ensure images are in the `public` directory
+
+## Deployment
+
+Follow these steps to deploy your portfolio for free using GitHub and Vercel:
+
+1. Create a new GitHub repository
+
+2. Push your portfolio to GitHub
+
+3. Deploy with Vercel:
+   - Go to [Vercel](https://vercel.com)
+   - Sign up or log in with GitHub
+   - Click "New Project"
+   - Import your GitHub repository
+   - Vercel will automatically detect Next.js
+   - Click "Deploy"
+
+Your portfolio will be live in minutes with a free Vercel domain (e.g., `your-repo.vercel.app`). You can later add a custom domain in your Vercel project settings.
+
+## Support
+
+If you find these templates helpful, please consider:
+
+- Starring the repository ⭐
+- Sharing with other developers
+- [Buying me a coffee](https://www.buymeacoffee.com/andreiancu) ☕
+
+For issues and feature requests, please [create an issue](https://github.com/devportfoliotemplates/devportfoliotemplates/issues).
